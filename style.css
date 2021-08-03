@@ -1,0 +1,164 @@
+:root {
+  --nav-bar-height: 50px;
+  --opacity: 0.7;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#background-image {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+  display: block;
+  z-index: -1;
+}
+
+#nav-bar {
+  position: fixed;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  background-color: black;
+  color: white;
+  line-height: var(--nav-bar-height);
+  z-index: 2;
+}
+
+#company-name {
+  font-family: Lora;
+  font-size: 30px;
+  grid-column: 1/2;
+}
+
+.nav-link {
+  grid-column: 3/4;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#main {
+  width: 70%;
+  margin: auto;
+  color: white;
+  padding-top: calc(var(--nav-bar-height) + 50px);
+  z-index: 1;
+}
+
+.container {
+  border-radius: 5px;
+}
+
+h1 {
+  padding-top: 10px;
+  text-align: center;
+}
+
+hr {
+  width: 90%;
+}
+
+h2 {
+  text-align: center;
+}
+
+.attributes {
+  font-size: 24px;
+  padding-left: 20px;
+}
+
+.descriptions {
+  font-size: 16px;
+  padding-left: 20px;
+}
+
+#product-lines {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#product-card {
+  border-radius: 5px;
+  border-style: solid;
+  border-color: yellow;
+  border-width: 1px;
+  background-color: black;
+  opacity: var(--opacity);
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+}
+
+#product-card:hover {
+  border-width: 5px;
+  border-color: yellow;
+  transform: scale(1.07);
+}
+
+.product-title {
+  font-size: 18px;
+  text-align: center;
+}
+
+.product-price {
+  font-size: 24px;
+  text-align: center;
+}
+
+.product-features {
+  text-align: justify;
+}
+
+#video {
+  display: block;
+  margin: auto;
+  z-index: 3;
+}
+
+#company-description {
+  background-color: black;
+  opacity: var(--opacity);
+}
+
+#form {
+}
+
+#email,
+#submit {
+  display: block;
+  margin: auto;
+}
+
+#img-src {
+  text-align: right;
+  padding-right: 10px;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+#footer {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background-color: black;
+  color: white;
+  line-height: 10px;
+}
+
+.footer-items {
+  grid-column: 2/3;
+  text-align: end;
+  padding-right: 10px;
+}
